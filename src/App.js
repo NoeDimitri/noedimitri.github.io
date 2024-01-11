@@ -1,18 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          whyy did that workk
-          please work lol
-        </p>
-      </header>
-    </div>
-  );
-}
+import { Routes, Route, Link } from 'react-router-dom';
+
+import About from './About.jsx'
+import Home from './Home.jsx'
+
+import './App.css'
+
+const App = () => (
+  <div>
+    <Link to="/home">gaming</Link>
+    <Routes>
+      <Route path="/" element={<Home />}></ Route>
+      <Route path='/about' element={<About />}></Route>
+      <Route exact path='/home' element={<Home />}></Route>
+    </Routes>
+  </div>
+);
 
 export default App;
