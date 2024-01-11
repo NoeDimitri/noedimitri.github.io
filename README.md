@@ -1,1 +1,3 @@
-what
+npm run deploy
+
+npm start

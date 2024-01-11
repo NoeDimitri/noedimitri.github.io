@@ -2,17 +2,16 @@ import './App.css'
 import React from "react";
 
 
-class About extends React.Component{
+class Projects extends React.Component{
     render() {
         
         return(
             <div className='App-header'>
-                about
-                
+                Projects
             </div>
         );
 
     }
 }
 
-export default About;
+export default Projects;

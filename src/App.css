@@ -24,6 +24,14 @@
   color: white;
 }
 
+.Name{
+  margin-top: 3rem;
+}
+
+.Notable-text{
+  color: #7dddf5
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -34,5 +42,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.Button-Row{
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .button{
+    margin-left: 3rem;
   }
 }
