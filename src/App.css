@@ -1,20 +1,14 @@
-.App {
-  text-align: center;
+html{
+  background-color: var(--background-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --dialog-color: #5fa9c2;
+  --background-color:#1f2229;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +16,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Tab-Content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 95vh;
 }
 
 .Name{
@@ -36,23 +41,33 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .Button-Row{
+  background-color:var(--background-color);
   flex-direction: row;
   justify-content: space-evenly;
-
+  text-align: center;
   margin-top: 1rem;
+  height:5vh
 }
 
 .Button-Row Button{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.Dialog-Box{
+  min-height:70vh;
+  min-width: 60vw;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.Dialog-Content{
+  display: flex;
+  text-align: left;
+}
+
+.square{
+  background-color: var(--dialog-color);
 }

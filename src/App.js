@@ -4,7 +4,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 import About from './About.jsx'
-import Home from './Home.jsx'
 import Landing from './Landing.jsx'
 import Contact from './Contact.jsx'
 import Projects from './Projects.jsx';
@@ -15,7 +14,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => (
-  <div class="App-header">
     <div class="Button-Row">
       <Link to="/">
         <Button variant="primary" size="lg">
@@ -42,17 +40,15 @@ const App = () => (
           Contact
         </Button>
       </Link>
-    </div>
 
     <Routes>
       <Route path="/" element={<Landing />}></ Route>
-      <Route path='/home' element={<Home />}></Route>
       <Route path='/about' element={<About />}></Route>
       <Route path='/projects' element={<Projects />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='/arts-designs' element={<ArtsDesigns />}></Route>
     </Routes>
-  </div>
+    </div>
 );
 
 export default App;

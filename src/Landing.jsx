@@ -1,17 +1,17 @@
 import './App.css'
 import React from 'react'
-import logo from './logo.svg'
+import { Link } from 'react-router-dom';
+
 
 class Landing extends React.Component{
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                    <span style={{display: 'inline'}}>Hi! I'm <span class="Notable-text">Justin Delgado </span><br /></span>
-                    A Computer Science Graduate who enjoys coding, talking about game design, and drawing! <br/> <br/>
-                    Click the buttons above to learn more about me. 😊
-                </header>
-            </div>
+            <header className="Tab-Content">
+                <span style={{display: 'inline'}}>Hi! I'm <span class="Notable-text">Justin Delgado </span></span>
+                <span style={{display: 'inline'}}>A Computer Science Graduate who enjoys coding, talking about game design, and <Link to="/arts-designs">drawing</Link>!</span>
+                <br/>
+                Click the buttons above to learn more about me. 😊
+            </header>
         );
     }
 }
