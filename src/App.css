@@ -49,7 +49,10 @@
   flex-direction: row;
   justify-content: space-evenly;
 
-  .button{
-    margin-left: 3rem;
-  }
+  margin-top: 1rem;
+}
+
+.Button-Row Button{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }

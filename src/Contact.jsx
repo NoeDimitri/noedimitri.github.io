@@ -7,6 +7,7 @@ class Contact extends React.Component{
             <div class="App-header">
                 Contact me here!
                 justindelgado326@gmail.com
+                https://www.linkedin.com/in/justind4/
             </div>
         );
 

@@ -8,38 +8,39 @@ import Home from './Home.jsx'
 import Landing from './Landing.jsx'
 import Contact from './Contact.jsx'
 import Projects from './Projects.jsx';
-import Arts_Designs from './ArtsDesigns.jsx'
+import ArtsDesigns from './ArtsDesigns.jsx'
 
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => (
   <div class="App-header">
-
     <div class="Button-Row">
       <Link to="/">
-        <Button variant="primary">
+        <Button variant="primary" size="lg">
           Home
-        </Button>{' '}
+        </Button>
       </Link>
       <Link to="/about">
-        <Button variant="primary">
+        <Button variant="primary" size="lg">
           About
-        </Button>{' '}
+        </Button>
       </Link>
       <Link to="/projects">
-        <Button variant="primary">
+        <Button variant="primary" size="lg">
           Projects
-        </Button>{' '}
+        </Button>
       </Link>
       <Link to="/arts-designs">
-        <Button variant="primary">
-          arts-designs
-        </Button>{' '}
+        <Button variant="primary" size="lg">
+          Art
+        </Button>
       </Link>
       <Link to="/contact">
-        <Button variant="primary">
+        <Button variant="primary" size="lg">
           Contact
-        </Button>{' '}
+        </Button>
       </Link>
     </div>
 
@@ -49,7 +50,7 @@ const App = () => (
       <Route path='/about' element={<About />}></Route>
       <Route path='/projects' element={<Projects />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
-      <Route path='/arts-designs' element={<Arts_Designs />}></Route>
+      <Route path='/arts-designs' element={<ArtsDesigns />}></Route>
     </Routes>
   </div>
 );

@@ -2,7 +2,7 @@ import './App.css'
 import React from "react";
 
 
-class Arts_Designs extends React.Component{
+class ArtDesigns extends React.Component{
     render() {
         
         return(
@@ -14,4 +14,4 @@ class Arts_Designs extends React.Component{
     }
 }
 
-export default Arts_Designs;
+export default ArtDesigns;
