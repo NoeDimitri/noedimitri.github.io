@@ -8,6 +8,7 @@ import Landing from './Landing.jsx'
 import Contact from './Contact.jsx'
 import Projects from './Projects.jsx';
 import ArtsDesigns from './ArtsDesigns.jsx'
+import Experience from './Experience.jsx';
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,6 +26,13 @@ const App = () => (
           About
         </Button>
       </Link>
+
+      <Link to="/experience">
+        <Button variant="primary" size="lg">
+          Experience
+        </Button>
+      </Link>
+
       <Link to="/projects">
         <Button variant="primary" size="lg">
           Projects
@@ -44,6 +52,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Landing />}></ Route>
       <Route path='/about' element={<About />}></Route>
+      <Route path='/experience' element={<Experience />}></Route>
       <Route path='/projects' element={<Projects />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='/arts-designs' element={<ArtsDesigns />}></Route>
