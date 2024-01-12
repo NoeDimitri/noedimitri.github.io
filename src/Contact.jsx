@@ -9,8 +9,8 @@ class Contact extends React.Component{
         return(
             <div class="Tab-Content">
                 Contact me here! <br></br>
-                <div style={{display:"block"}}>
-                    <span style={{display: 'inline', margin: "1rem"}}>
+                <div style={{display:"block", textAlign:"left"}}>
+                    <span style={{display: 'inline'}}>
                         <img src={email_icon} style={{width:"3rem", height:"3rem", margin:"1rem"}} alt='email icon'/>
                         <a href="justindelgado326@gmail.com">justindelgado326@gmail.com</a><br></br>
                     </span>
