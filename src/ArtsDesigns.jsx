@@ -1,4 +1,5 @@
 import './App.css'
+import './test.css'
 import React from "react";
 import Image from 'react-bootstrap/Image';
 
@@ -20,20 +21,25 @@ const designs = [
 ]
 
 const designItems = designs.map(design => 
-    <div class="art_item"><Image src={design.src} rounded /> </div>
+    <ArtItem link={design.src} />
 )   
-
 
 
 class ArtDesigns extends React.Component{
     render() {
         return(
-            <div className='Tab-Content'>
-                Art <br/>
-                    <ArtItem link="images/fran.png"></ArtItem>
-                    <ArtItem link="/logo512.png"></ArtItem>
-                Designs
-                <div class="art_grid">
+            <div className='Art-Content'>
+                <b>Art</b>
+                <div id ="image-track">
+                    <ArtItem link="/images/fran.png"></ArtItem>
+                    <ArtItem link="/images/fran.png"></ArtItem>
+                    <ArtItem link="/images/fran.png"></ArtItem>
+                    <ArtItem link="/images/fran.png"></ArtItem>
+                    <ArtItem link="/images/fran.png"></ArtItem>
+                </div>
+                <b>Designs</b>
+                <p>I've made several flyers for the various clubs I've helped lead. Here are some of the designs that I'm proud of!</p>
+                <div id="image-track">
                     {designItems}
                 </div>
             </div>
@@ -44,8 +50,17 @@ class ArtDesigns extends React.Component{
 function ArtItem({link})
 {
     return(
-        <Image class="art-item" src={link} rounded />
-    );
+        <Image 
+            id = "image"
+            style={{
+                width:"40vmin", 
+                height:"40vmin", 
+                objectFit:"cover", 
+                objectPosition:"center"}} 
+            draggable="false"
+            src={link} rounded>
+        </Image>          
+    ); 
 }
 
 export default ArtDesigns;

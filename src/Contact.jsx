@@ -19,6 +19,11 @@ class Contact extends React.Component{
                         <img src={linkedIn_icon} style={{width:"3rem", height:"3rem", margin:"1rem"}} alt='linkedIn Logo'/>
                         <a href="https://www.linkedin.com/in/justind4/">linkedin.com/justind4</a>
                     </span>
+                    <br></br>
+                    <span style={{display: 'inline'}}>
+                        <img src="/images/github.png" style={{width:"3rem", height:"3rem", margin:"1rem"}} alt='linkedIn Logo'/>
+                        <a href="https://github.com/NoeDimitri">github.com/NoeDimitri</a>
+                    </span>
                 </div>
             </div>
         );
