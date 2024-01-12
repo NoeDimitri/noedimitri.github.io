@@ -21,15 +21,17 @@ const technology = [
 
 const languages = [
     {id: 0,
-    name: "python"},
+    name: "Python"},
     {id: 1,
     name: "C++"},
     {id: 2,
     name: "C#"},
     {id: 3,
-    name: "typescript"},
+    name: "Typescript"},
     {id: 4,
-    name: "SQL"}
+    name: "JavaScript"},
+    {id: 5,
+    name: "HTML / CSS"}
 ];
 
 const technology_items = technology.map(tech => <div class="column_item square rounded-4">{tech.name}</div>);
@@ -54,21 +56,20 @@ class About extends React.Component{
                             <li>3.99 GPA, Summa Cum Laude</li>
                         </ul>
                     </p>
-                <div class="column_parent">
-                    <div class="column_container">
-                        <div class="column_title">
-                            <b>Languages</b>
+                    <div class="column_parent">
+                        <div class="column_container">
+                            <div class="column_title">
+                                <b>Languages</b>
+                            </div>
+                            {language_items}
                         </div>
-                        {language_items}
-                    </div>
-                    <div class="column_container">
-                        <div class="column_title">
-                            <b>Technologies</b>
+                        <div class="column_container">
+                            <div class="column_title">
+                                <b>Technologies</b>
+                            </div>
+                            {technology_items}
                         </div>
-                        {technology_items}
                     </div>
-                </div>
-                
                 </span>
             </div>
         );

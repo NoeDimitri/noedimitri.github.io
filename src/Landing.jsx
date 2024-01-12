@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class Landing extends React.Component{
     render() {
         return (
-            <header className="Tab-Content">
+            <header className="Tab-Content" style={{justifyContent:"center"}}>
                 <span style={{display: 'inline'}}>Hi! I'm <span class="Notable-text">Justin Delgado </span></span>
                 <span style={{display: 'inline'}}>A Computer Science Graduate who enjoys coding, talking about game design, and <Link to="/arts-designs">drawing</Link>!</span>
                 <br/>

@@ -7,7 +7,7 @@ class Contact extends React.Component{
     render() {
         
         return(
-            <div class="Tab-Content">
+            <div class="Tab-Content" style={{justifyContent:"center"}}>
                 Contact me here! <br></br>
                 <div style={{display:"block", textAlign:"left"}}>
                     <span style={{display: 'inline'}}>
@@ -19,7 +19,6 @@ class Contact extends React.Component{
                         <a href="https://www.linkedin.com/in/justind4/">linkedin.com/justind4</a>
                     </span>
                 </div>
-
             </div>
         );
 
