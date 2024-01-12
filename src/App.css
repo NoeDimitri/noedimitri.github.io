@@ -7,6 +7,15 @@ html{
   --background-color:#1f2229;
 }
 
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 20%;               
+  background-color:#ffffea;
+  height: px;
+}
+
 .Tab-Content {
   display: flex;
   text-align: center;
@@ -14,12 +23,9 @@ html{
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  min-height: 95vh;
-  margin-top: 2rem;
-}
-
-.Name{
-  margin-top: 3rem;
+  min-height: 90vh;
+  padding-top: 2rem;
+  overflow: hidden;
 }
 
 .Notable-text{
@@ -35,7 +41,7 @@ html{
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
   height:5vh
 }
 
@@ -103,7 +109,7 @@ html{
   overflow: hidden;
 }
 
-.art_grid > .image {
+.art_grid > Image {
   width: 10vmin;
   height: 10vmin;
   object-fit: cover;

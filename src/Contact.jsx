@@ -8,11 +8,12 @@ class Contact extends React.Component{
         
         return(
             <div class="Tab-Content" style={{justifyContent:"center"}}>
-                Contact me here! <br></br>
+                Here are my contacts!
+                <hr></hr>
                 <div style={{display:"block", textAlign:"left"}}>
                     <span style={{display: 'inline'}}>
                         <img src={email_icon} style={{width:"3rem", height:"3rem", margin:"1rem"}} alt='email icon'/>
-                        <a href="justindelgado326@gmail.com">justindelgado326@gmail.com</a><br></br>
+                        <a href="mailto:justindelgado326@gmail.com">justindelgado326@gmail.com</a><br></br>
                     </span>
                     <span style={{display: 'inline'}}>
                         <img src={linkedIn_icon} style={{width:"3rem", height:"3rem", margin:"1rem"}} alt='linkedIn Logo'/>
