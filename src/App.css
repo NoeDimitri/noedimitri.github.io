@@ -42,6 +42,7 @@ html{
 .Button-Row Button{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  margin-top: 1rem;
 }
 
 .Dialog-Box{
@@ -99,10 +100,19 @@ html{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
-.art_item{
-  width: 1rem;
-  height: 1rem;
-  margin: 5rem;
+.art_grid > .image {
+  width: 10vmin;
+  height: 10vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+.art-item{
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
 }
