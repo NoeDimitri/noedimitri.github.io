@@ -71,3 +71,25 @@ html{
 .square{
   background-color: var(--dialog-color);
 }
+
+.column_parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column_container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.column_item{
+  background: var(--background-color);
+  padding: 6px;
+  color: white;
+  text-align: center;
+  height: 4rem;
+}
