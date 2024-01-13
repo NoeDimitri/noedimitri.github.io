@@ -1,31 +1,31 @@
-.App {
-  text-align: center;
+html{
+  background-color: var(--background-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --dialog-color: #5fa9c2;
+  --background-color:#1f2229;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 20%;               
+  background-color:#ffffea;
+  height: px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Tab-Content {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.Name{
-  margin-top: 3rem;
+  min-height: 90vh;
+  padding-top: 2rem;
+  overflow: hidden;
 }
 
 .Notable-text{
@@ -36,20 +36,89 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .Button-Row{
+  background-color:var(--background-color);
   flex-direction: row;
   justify-content: space-evenly;
+  text-align: center;
+  padding-top: 1rem;
+  height:5vh
+}
 
-  .button{
-    margin-left: 3rem;
-  }
+.Button-Row Button{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+.Dialog-Box{
+  min-height:70vh;
+  min-width: 60vw;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.Dialog-Content{
+  display: flex;
+  text-align: left;
+}
+
+.square{
+  background-color: var(--dialog-color);
+}
+
+.column_parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column_container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  gap: 1rem;
+}
+
+.column_item{
+  background: var(--background-color);
+  padding: 6px;
+  color: white;
+  text-align: center;
+  height: 4rem;
+}
+
+.block_item{
+  min-height:8vh;
+  min-width: 60vw;
+  margin: 1rem;
+  padding: 1rem;
+  display: block;
+  text-align: left
+}
+
+.block_item p{
+  font-size: large;
+}
+
+.art_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.art_grid > Image {
+  width: 10vmin;
+  height: 10vmin;
+  object-fit: cover;
+  object-position: center;
+}
+
+.art-item{
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
 }

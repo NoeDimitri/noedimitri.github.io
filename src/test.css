@@ -1,0 +1,28 @@
+
+.Art-Content {
+    margin: 0rem;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 1rem;
+}
+
+
+#image-track {
+    margin: 1rem;
+    display: flex;
+    gap: 2vmin;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#image-track > img {
+    width: 40vmin;
+    height: 40vmin;
+    object-fit: cover;
+    object-position: center;
+} 
+
+#image:hover {
+    opacity: 50%;
+    cursor: zoom-in;
+}
